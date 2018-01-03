@@ -1,0 +1,116 @@
+body{
+  margin: 0;
+  padding: 0;
+	font: normal 20px "Courier new", Courier, monospace;
+	color: grey;
+}
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color: gray;
+}
+
+footer{
+	text-align: center;
+	max-width: 1240px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+fieldset{
+	border: 1px solid #eee;
+}
+.sb{
+  border: 1px solid #eee;
+}
+.heading{
+	max-width: 1240px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fiterItems{
+  height: 30px;
+}
+.AddBtn{
+  background: none;
+  border: none;
+  float: right;
+  margin-top: 5px;
+  margin-right: 22px;
+  padding: 0;
+}
+.mainImg{
+	max-width: 1240px;
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.searchBar{
+	max-width: 1240px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+}
+.searchBar input{
+	width: 500px;
+	height: 30px;
+	text-align: center;
+	margin-left: 370px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0;
+	border-radius: 20px;
+	border: 2px solid lightGray;
+	font: normal 18px "Courier new", Courier, monospace;
+
+}
+.container{
+	max-width: 1240px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main{
+  display: flex;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.card{
+  flex: 1;
+}
+.panel{
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	background: #eee;
+	border: 1px solid gray;
+
+}
+.panelContent{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.grid{
+	flex: 1;
+	text-align: center;
+	border-top: 1px solid #eee;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+	padding: 0;
+	margin: 0
+}
+.panelContent{
+  display: none;
+}
+#box{
+  display: none;
+}

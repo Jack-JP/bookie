@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bookie">
+    <meta name="author" content="JP">
+    <link rel="icon" href="/favicon.ico">
+	<title>Learning</title>
+  <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+<header>
+<div class="heading sb"><h4>BOOKIE Allways in contact.</h4></div>
+<div class="mainImg"><img src="img/bannerImg.jpeg" alt="Welkom bij Bookie"></div>
+<div class="searchBar sb">
+  <form id="searchForm">
+    <input type="text" placeholder="Vind je persoon sneller, zoek hier...">
+  </form>
+</div>
+</header>
+<div class="section container">
+  <div class="fiterItems">
+    <!--<button id="addItem">Voeg Nieuwe toe.</button>-->
+    <button class="AddBtn" onclick="showAddForm()">Voeg Nieuwe toe.</button>
+  </div>
+  <div class="main">
+    <div class="card">
+      <ul class="gridContainer">
+        <li class="grid gridHead"></li>
+        <li class="grid gridHead">Naam</li>
+        <li class="grid gridHead">Email</li>
+        <li class="grid gridHead">Telefoon</li>
+        <li class="grid gridHead">Stad</li>
+      </ul>
+      <ul class="gridContainer">
+        <li class="grid"></li>
+        <li class="grid"></li>
+        <li class="grid"><h4>A</h4></li>
+        <li class="grid"></li>
+        <li class="grid"></li>
+      </ul>
+      <ul class="gridContainer" id="gridContainerData"></ul>
+    </div>
+    <div class="card" id="box" >
+      <div class="info">
+        <div id="panelBtn" class="panel sb">Naam & Groep</div>
+        <div id="panelContent" class="panelContent">
+          <form id="viewForm">
+            <fieldset>
+              <legend>View personal information:</legend>
+              <ul>
+                <li>Naam: naam</li>
+                <li>Email: email</li>
+                <li>Telefoon: tel</li>
+                <li>Stad: stad</li>
+                <li>
+                  <input type="button" value="Gegeven wijzigen" id="updateItem">
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+
+          <form id="updateForm">
+            <fieldset>
+              <legend>Update personal information:</legend>
+              Naam:<br>
+              <input type="text" id="naam" value="Naam"><br>
+              Email:<br>
+              <input type="text" id="email" value="Email"><br>
+              Mobiel:<br>
+              <input type="text" id="mobiel" value="Mobiel"><br>
+              Stad:<br>
+              <input type="text" id="stad" value="Stad"><br>
+              <br>
+              <input type="button" value="Update gegevens" id="saveItem">
+              <input type="button" value="Verwijderen gegevens" id="deleteItem">
+              <input type="button" value="Annuleer" id="cancelItem">
+            </fieldset>
+          </form>
+
+          <form id="newForm">
+            <fieldset>
+              <legend>New personal information:</legend>
+              Naam:<br>
+              <input type="text" id="newName" value="test"><br>
+              Email:<br>
+              <input type="text" id="newEmail" value="test"><br>
+              Mobiel:<br>
+              <input type="text" id="newMobile" value="test"><br>
+              Stad:<br>
+              <input type="text" id="newCity" value="test"><br>
+              <br>
+              <input type="submit" id="saveNewItem" value="Voeg toe">
+              <input type="button" id="cancelNewItem" value="Annuleer">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="sb">Made by JP</footer>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
